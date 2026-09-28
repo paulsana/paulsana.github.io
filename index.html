@@ -1,0 +1,59 @@
+---
+layout: default
+---
+{% assign p = site.data.profile %}
+<div class="wrap">
+  <nav>
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#clubs">Clubs</a><a href="#awards">Awards</a>
+  </nav>
+
+  <div class="profile">
+    <div class="col left">
+      <section class="hero">
+        <h1>{{ p.name }}</h1>
+        <div class="avatar">{% if p.avatar != "" %}<img src="{{ p.avatar | relative_url }}" alt="Illustration of {{ p.name }}">{% else %}<span aria-hidden="true">RP</span>{% endif %}</div>
+        <p class="mood" lang="ja">✦ {{ p.katakana }} ✦</p>
+        <p>{{ p.tagline }}</p>
+      </section>
+
+      <section class="box"><h2>Contact</h2><div class="in">
+        <a href="{{ p.github }}">GitHub</a><br><a href="mailto:{{ p.email }}">{{ p.email }}</a>
+      </div></section>
+
+      <section class="box"><h2>Details</h2><div class="in">
+        <p class="meta">School</p><p>{{ p.education }}</p>
+        <p class="meta">Languages</p><p>{{ p.languages | join: ", " }}</p>
+      </div></section>
+
+      <section class="box"><h2>Interests</h2><div class="in">
+        <ul class="chips">{% for i in p.interests %}<li>{{ i }}</li>{% endfor %}</ul>
+      </div></section>
+    </div>
+
+    <div class="col right">
+      <section class="box" id="about"><h2>About me</h2><div class="in"><p>{{ p.intro }}</p></div></section>
+
+      <section class="box" id="skills"><h2>Skills</h2><div class="in">
+        {% for group in p.skills %}<h3>{{ group[0] }}</h3>
+        <ul class="chips">{% for s in group[1] %}<li>{{ s }}</li>{% endfor %}</ul>{% endfor %}
+      </div></section>
+
+      <section class="box" id="projects"><h2>Projects</h2><div class="in grid">
+        {% for x in p.projects %}<article class="card"><h3>{{ x.title }}</h3><p class="meta">{{ x.dates }}</p><p>{{ x.text }}</p>
+        <ul class="chips">{% for t in x.tags %}<li>{{ t }}</li>{% endfor %}</ul></article>{% endfor %}
+      </div></section>
+
+      <section class="box" id="experience"><h2>Experience</h2><div class="in">
+        {% for x in p.experience %}<h3>{{ x.title }}</h3><p class="meta">{{ x.dates }}</p><p>{{ x.text }}</p>{% endfor %}
+      </div></section>
+
+      <section class="box" id="clubs"><h2>Clubs and volunteering</h2><div class="in grid">
+        {% for x in p.clubs %}<article class="card"><h3>{{ x.title }}</h3><p>{{ x.text }}</p></article>{% endfor %}
+      </div></section>
+
+      <section class="box" id="awards"><h2>Awards</h2><div class="in">
+        <ul class="awards">{% for a in p.awards %}<li>{{ a }}</li>{% endfor %}</ul>
+      </div></section>
+    </div>
+  </div>
+</div>

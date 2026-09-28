@@ -1,0 +1,52 @@
+name: Rupsa Paul
+katakana: ポートフォリオ
+tagline: Building robots, games, and machine learning models.
+intro: >-
+  Freshman interested in engineering, with a foundation in math, computer science,
+  and physics. I like projects where code meets the real world.
+email: rupsapaul07@gmail.com
+github: https://github.com/paulsana
+education: Allen High School, Class of 2026 | GPA 4.42 | Top 6% | SAT 1510
+languages: [English, Hindi, Bengali, Spanish, Japanese]
+skills:
+  Code: [Python, Java, JavaScript, HTML, C++, GDScript]
+  Machine learning: [Supervised learning, Unsupervised learning, Reinforcement learning, Advanced learning algorithms]
+  Certification: [Machine Learning Specialization (Coursera)]
+projects:
+  - title: Underwater Welding Robot
+    dates: Sep - Nov 2024
+    text: Designed and built a robot for underwater welding, combining mechanical engineering with programming.
+    tags: [Robotics, Engineering]
+  - title: PacMan Remake
+    dates: Aug 2024 - Feb 2025
+    text: Rebuilt the arcade classic in the Godot engine, and learned GDScript along the way.
+    tags: [GDScript, Godot]
+experience:
+  - title: Online Tutor, Eagle Tutors / LearnToBe
+    dates: Aug 2024 - May 2026
+    text: Tutored algebra and calculus across grade levels. 53+ hours delivered.
+clubs:
+  - title: Girls in STEM Club
+    text: Coordinated 5 guest speakers, ran activities for 20+ students, recruited 15+ members, and secured school funding for STEM platforms.
+  - title: EmpowerHer STEM Blog
+    text: Wrote 5-6 articles profiling women in science and engineering.
+  - title: Library of Congress
+    text: Transcribed and peer-reviewed 30 historical documents for digital preservation.
+  - title: Red Cross Virtual Volunteer
+    text: Mapped shelters and aid locations for disaster relief.
+  - title: Math Honor Society
+    text: 10+ service hours tutoring and helping at math events.
+  - title: Computer Science Club and Physics Club
+    text: Cybersecurity basics, coding challenges, and peer-led talks on cosmology and mechanics.
+awards:
+  - 3rd Place, Beal Bank DRSEF Science Fair
+  - 2nd Place, Allen High School Science Fair
+  - National Recognition Program Award for Outstanding Academic Achievement
+  - AP Scholar with Distinction
+  - Certificate of Outstanding Academic Achievement (April 2024)
+  - Certificate of Excellence in Pre-AP Spanish, Algebra, and Biology (May 2023)
+avatar: ""   # e.g. /assets/images/avatar.png (leave empty to show initials)
+interests:
+  - Detective stories and murder mysteries
+  - Nature and the outdoors
+  - Someday - a farmhouse

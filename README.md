@@ -1,3 +1,2 @@
 # Portfolio
-Edit your content in `_data/profile.yml`. Design lives in `assets/css/style.css`.
-Run locally: `bundle install && bundle exec jekyll serve` then open http://localhost:4000
+hi! i am rupsa paul and this is my personal web portfolio!
